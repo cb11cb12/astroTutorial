@@ -1,8 +1,19 @@
 ---
-const github = "GitHub";
-const username = "cb11cb12";
+import Social from './Social.astro';
 ---
+<style>
+    footer {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 
 <footer>
-  <p>Learn more about my projects on <a href={`https://www.${github}.com/${username}`} target="_blank">{github}</a>!</p>
+<br>
+  <h4>Learn more about my projects on:</h4>
+  <br>
+  <Social platform="Twitter" username="cb11cb12" />
+  <Social platform="GitHub" username="cb11cb12" />
+  <Social platform="LinkedIn" username="/in/cb-brandi" />
 </footer>
