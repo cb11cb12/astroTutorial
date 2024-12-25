@@ -1,6 +1,8 @@
 ---
 import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
+
 
 const pageTitle = "About CB";
 const identity = {
@@ -51,5 +53,6 @@ const skillColor = "navy";
 <ul>
   {skills.map((skill) => <li class="skill">{skill}</li>)}
 </ul>
+<Footer />
 	</body>
 </html>
