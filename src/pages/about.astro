@@ -1,4 +1,7 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
+
 const pageTitle = "About CB";
 const identity = {
   firstName: "CB",
@@ -31,9 +34,7 @@ const skillColor = "navy";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
+        <Navigation />
 
         <h1>{pageTitle}</h1>
         <h2>... and my new Astro site!</h2>
